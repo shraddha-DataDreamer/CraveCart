@@ -25,7 +25,7 @@ import { useEffect } from 'react'
 import { io } from 'socket.io-client'
 import { setSocket } from './redux/userSlice'
 
-const serverUrl = "https://cravecart-y93p.onrender.com"
+export const serverUrl = "https://cravecart-y93p.onrender.com"
 function App() {
     const {userData}=useSelector(state=>state.user)
     const dispatch=useDispatch()
