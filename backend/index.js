@@ -48,3 +48,6 @@ server.listen(port,()=>{
     console.log(`server started at ${port}`)
 })
 
+app.get("/", (req, res) => {
+  res.send("CraveCart API is running 🚀");
+});
