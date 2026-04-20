@@ -7,8 +7,8 @@ import { FaCircleChevronRight } from "react-icons/fa6";
 import { useSelector } from 'react-redux';
 import FoodCard from './FoodCard';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { serverUrl } from '../App';
+// import axios from 'axios';
+// import { serverUrl } from '../App';
 
 function UserDashboard() {
   const {currentCity,shopInMyCity,itemsInMyCity,searchItems}=useSelector(state=>state.user)

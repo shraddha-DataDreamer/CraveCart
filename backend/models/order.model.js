@@ -56,11 +56,7 @@ const orderSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     },
-    paymentMethod: {
-        type: String,
-        enum: ['cod', "online"],
-        required: true
-    },
+   
     deliveryAddress: {
         text: String,
         latitude: Number,
@@ -75,14 +71,8 @@ const orderSchema = new mongoose.Schema({
         type:Boolean,
         default:false
     },
-    razorpayOrderId:{
-        type:String,
-        default:""
-    },
-   razorpayPaymentId:{
-    type:String,
-       default:""
-   }
+   
+   
 }, { timestamps: true })
 
 const Order=mongoose.model("Order",orderSchema)
