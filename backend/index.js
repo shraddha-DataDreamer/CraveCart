@@ -43,11 +43,12 @@ app.use("/api/item",itemRouter)
 app.use("/api/order",orderRouter)
 
 socketHandler(io)
-server.listen(port,()=>{
-    connectDb()
-    console.log(`server started at ${port}`)
-})
 
 app.get("/", (req, res) => {
   res.send("CraveCart API is running 🚀");
+});
+
+server.listen(port, () => {
+  connectDb()
+  console.log(`server started at ${port}`)
 });
